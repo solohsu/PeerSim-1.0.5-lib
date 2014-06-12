@@ -102,7 +102,7 @@ public boolean addNeighbor(Node n)
 			return false;
 	}
 	if (len == neighbors.length) {
-		Node[] temp = new Node[3 * neighbors.length / 2];
+		Node[] temp = new Node[3 * neighbors.length / 2 + 1];
 		System.arraycopy(neighbors, 0, temp, 0, neighbors.length);
 		neighbors = temp;
 	}
